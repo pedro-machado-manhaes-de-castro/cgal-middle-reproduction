@@ -1,0 +1,231 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "case": "uniform-original-middle",
+      "path_reference": 28.971772786582466,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "uniform-corrected-middle",
+      "path_reference": 28.971772786582466,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "uniform-original-median",
+      "path_reference": 30.348691608906307,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "uniform-corrected-median",
+      "path_reference": 30.348691608906307,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "clustered-original-middle",
+      "path_reference": 8.077301275233514,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "clustered-corrected-middle",
+      "path_reference": 8.01533658952326,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "clustered-original-median",
+      "path_reference": 10.652840077256368,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "clustered-corrected-median",
+      "path_reference": 10.652840077256368,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "concentrated-original-middle",
+      "path_reference": 1.414213562476641,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "concentrated-corrected-middle",
+      "path_reference": 1.4142135623998302,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "concentrated-original-median",
+      "path_reference": 2.828427124771234,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "concentrated-corrected-median",
+      "path_reference": 2.828427124771234,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "grid-original-middle",
+      "path_reference": 29.47753454265821,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "grid-corrected-middle",
+      "path_reference": 29.47753454265821,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "grid-original-median",
+      "path_reference": 31.34003933553709,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "grid-corrected-median",
+      "path_reference": 31.34003933553709,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "collinear-original-middle",
+      "path_reference": 11.517801744488256,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "collinear-corrected-middle",
+      "path_reference": 11.504751953213036,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "collinear-original-median",
+      "path_reference": 12.791706675257108,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "collinear-corrected-median",
+      "path_reference": 12.791706675257108,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicates-original-middle",
+      "path_reference": 1.7677669529663689,
+      "trials": 2,
+      "vertices": 3,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicates-corrected-middle",
+      "path_reference": 1.7677669529663689,
+      "trials": 2,
+      "vertices": 3,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicates-original-median",
+      "path_reference": 2.82842712474619,
+      "trials": 2,
+      "vertices": 3,
+      "status": "PASS"
+    },
+    {
+      "case": "duplicates-corrected-median",
+      "path_reference": 2.82842712474619,
+      "trials": 2,
+      "vertices": 3,
+      "status": "PASS"
+    },
+    {
+      "case": "exponential-original-middle",
+      "path_reference": 2.028113463310142,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "exponential-corrected-middle",
+      "path_reference": 1.716138764304773,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "exponential-original-median",
+      "path_reference": 3.42676942785792,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "exponential-corrected-median",
+      "path_reference": 3.42676942785792,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "graded-original-middle",
+      "path_reference": 5.490718090196543,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "graded-corrected-middle",
+      "path_reference": 5.26027223315518,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "graded-original-median",
+      "path_reference": 7.098576895504938,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    },
+    {
+      "case": "graded-corrected-median",
+      "path_reference": 7.098576895504938,
+      "trials": 2,
+      "vertices": 257,
+      "status": "PASS"
+    }
+  ],
+  "method": "Insertion trace recorded inside the insertion loop in an assertion-enabled ASan/UBSan build; independent Python path sum and distinct point count; median control in both builds.",
+  "nontrivial_reordering_trials": 56
+}

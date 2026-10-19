@@ -1,0 +1,9 @@
+Validation of the reproduction package, 19 October 2026
+
+The package was extracted into a fresh directory and compiled against a clean official checkout at 0490d81af4220f33005914676f362f349933fbc1. The DIMACS New York archive was downloaded from its public URL. The raw-source and regenerated projected-coordinate SHA-256 checks passed. All four numerical CSV tables regenerated from the original 2730 constructions matched byte for byte.
+
+The six-point listing and all 720 permutations reproduced the historical ordering results: 714 failures in each original entry point, zero with the candidate. The 32 assertion-enabled ASan/UBSan configurations passed, covering 64 constructions with insertion-trace checks. The fresh New York benchmark completed all 21 constructions, with identical geometry, insertion-order hashes and paths compared with the original campaign.
+
+samples.jsonl contains these 21 new timing observations. comparison.csv contains the paired corrected/original ratios and the same individual bootstrap intervals used for the original results. The observed total-time ratio is 0.951908 [0.850160, 1.012797], compared with 1.051547 [1.020776, 1.095786] in the original full campaign. The fresh run did not reproduce the earlier slowdown. This does not establish equivalence or a universal improvement.
+
+environment.json identifies the compiler, base, input, binaries, CPU affinity and execution order. The run uses all 264346 coordinates and seeds 1729 through 1735. It keeps the relative order of the New York processes from the full schedule while omitting intervening datasets. This is a test of the distributed reproduction procedure. Its results remain separate from recorded_results and do not replace the original observations. Every measured source and the exact projected input remain unchanged.

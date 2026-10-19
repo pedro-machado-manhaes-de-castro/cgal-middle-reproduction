@@ -1,0 +1,146 @@
+{
+  "format": "Little-endian float64 pairs x,y, no header",
+  "datasets": [
+    {
+      "name": "roads_ny",
+      "n": 264346,
+      "file": "data/roads_ny.xy",
+      "sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "bytes": 4229536,
+      "projection": "Spherical Lambert azimuthal equal-area",
+      "center_lon_lat_degrees": [
+        -74.0,
+        40.8
+      ],
+      "radius_metres": 6371008.8,
+      "metric": "Euclidean distance in the projected plane, metres",
+      "duplicates": "Preserved",
+      "bounds_lon_lat_degrees": [
+        [
+          -74.49999799999999,
+          40.300008999999996
+        ],
+        [
+          -73.500016,
+          41.299997
+        ]
+      ],
+      "source": {
+        "url": "https://www.diag.uniroma1.it/~challenge9/data/USA-road-d/USA-road-d.NY.co.gz",
+        "file": "data/raw/USA-road-d.NY.co.gz",
+        "sha256": "02547a628742164e02bd73f59e33a65d23dfac8fc54c09275c8b9169c38eafdf",
+        "bytes": 2058598
+      },
+      "credit": "9th DIMACS Implementation Challenge, TIGER/Line US road networks",
+      "source_description": "https://www.diag.uniroma1.it/~challenge9/download.shtml",
+      "license": "Public domain, as stated on the DIMACS download page",
+      "selection": "All coordinate records; graph edges are not used"
+    },
+    {
+      "name": "roads_cal",
+      "n": 1890815,
+      "file": "data/roads_cal.xy",
+      "sha256": "fedb052b48a183eedce31f166d0625043e7d32839747aa07172195d909244eef",
+      "bytes": 30253040,
+      "projection": "Spherical Lambert azimuthal equal-area",
+      "center_lon_lat_degrees": [
+        -119.5,
+        37.25
+      ],
+      "radius_metres": 6371008.8,
+      "metric": "Euclidean distance in the projected plane, metres",
+      "duplicates": "Preserved",
+      "bounds_lon_lat_degrees": [
+        [
+          -124.406566,
+          32.50005
+        ],
+        [
+          -114.00007,
+          41.999924
+        ]
+      ],
+      "source": {
+        "url": "https://www.diag.uniroma1.it/~challenge9/data/USA-road-d/USA-road-d.CAL.co.gz",
+        "file": "data/raw/USA-road-d.CAL.co.gz",
+        "sha256": "75b13daffc71efc1baf41c7276218c323f29f3d2237da8688e261a1bf9606fe4",
+        "bytes": 17195534
+      },
+      "credit": "9th DIMACS Implementation Challenge, TIGER/Line US road networks",
+      "source_description": "https://www.diag.uniroma1.it/~challenge9/download.shtml",
+      "license": "Public domain, as stated on the DIMACS download page",
+      "selection": "All coordinate records; graph edges are not used"
+    },
+    {
+      "name": "roads_w",
+      "n": 6262104,
+      "file": "data/roads_w.xy",
+      "sha256": "f403f68ae7195eb4e30454e64a71f2993a1a0c27b1f4d6de38cd2063cd8bfd48",
+      "bytes": 100193664,
+      "projection": "Spherical Lambert azimuthal equal-area",
+      "center_lon_lat_degrees": [
+        -115.0,
+        38.5
+      ],
+      "radius_metres": 6371008.8,
+      "metric": "Euclidean distance in the projected plane, metres",
+      "duplicates": "Preserved",
+      "bounds_lon_lat_degrees": [
+        [
+          -124.722781,
+          28.042082999999998
+        ],
+        [
+          -100.0,
+          49.002486999999995
+        ]
+      ],
+      "source": {
+        "url": "https://www.diag.uniroma1.it/~challenge9/data/USA-road-d/USA-road-d.W.co.gz",
+        "file": "data/raw/USA-road-d.W.co.gz",
+        "sha256": "1f6e0974e5498573c793cdb81507e0ecaf992575350ee97349493537f2505e11",
+        "bytes": 60272281
+      },
+      "credit": "9th DIMACS Implementation Challenge, TIGER/Line US road networks",
+      "source_description": "https://www.diag.uniroma1.it/~challenge9/download.shtml",
+      "license": "Public domain, as stated on the DIMACS download page",
+      "selection": "All coordinate records; graph edges are not used"
+    },
+    {
+      "name": "shorelines_europe",
+      "n": 1826772,
+      "file": "data/shorelines_europe.xy",
+      "sha256": "690186b09014ea6e063b488a1d590613a77c57527fd7d71701588f033e36fd2d",
+      "bytes": 29228352,
+      "projection": "Spherical Lambert azimuthal equal-area",
+      "center_lon_lat_degrees": [
+        10.0,
+        52.0
+      ],
+      "radius_metres": 6371008.8,
+      "metric": "Euclidean distance in the projected plane, metres",
+      "duplicates": "Preserved",
+      "bounds_lon_lat_degrees": [
+        [
+          -25.0,
+          30.0
+        ],
+        [
+          45.0,
+          72.0
+        ]
+      ],
+      "source": {
+        "url": "https://ftp.soest.hawaii.edu/gshhg/gshhg-bin-2.3.7.zip",
+        "file": "data/raw/gshhg-bin-2.3.7.zip",
+        "sha256": "28600e8f7a08645aab43079326df6504212ec5ccb2b4bcf3b5f4f12ed60e82bc",
+        "bytes": 118617033
+      },
+      "credit": "Paul Wessel and Walter H. F. Smith; GSHHG 2.3.7",
+      "source_description": "https://www.soest.hawaii.edu/pwessel/gshhg/",
+      "license": "GNU Lesser General Public License version 3 or later",
+      "selection": "gshhs_f.b, levels 1-5, longitude [-25,45], latitude [30,72], inclusive",
+      "source_level_1_to_5_count": 10587854
+    }
+  ]
+}

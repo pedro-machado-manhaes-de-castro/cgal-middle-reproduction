@@ -1,0 +1,244 @@
+{
+  "base_commit": "0490d81af4220f33005914676f362f349933fbc1",
+  "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+  "compiler": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0\nCopyright (C) 2025 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43",
+  "binaries": {
+    "original": "6fc4a2e690a7212e79f79e50949fd3c4545d8817a11a1aa95fe2a1a2aa3569d4",
+    "corrected": "0c5b5371a461f59a09d754a1e247c7694977cfb63dc7547aadb01a5a2598d433"
+  },
+  "schedule": [
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1735,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1735,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1735,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1730,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1730,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1730,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1732,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1732,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1732,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1734,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1734,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1734,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1733,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1733,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1733,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1731,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1731,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1731,
+      "variant": "middle-corrected",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1729,
+      "variant": "median",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1729,
+      "variant": "middle-original",
+      "repeats": 1
+    },
+    {
+      "dataset": "roads_ny",
+      "source": "data/roads_ny.xy",
+      "kind": "real",
+      "n": 264346,
+      "dataset_sha256": "4c9bc16a9176cf56aadcd0536aa759c5e5c151b92c1175bf0cb5e8e0ea43c571",
+      "full_dataset": true,
+      "seed": 1729,
+      "variant": "middle-corrected",
+      "repeats": 1
+    }
+  ],
+  "cpu_affinity": 0
+}

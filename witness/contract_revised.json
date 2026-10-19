@@ -1,0 +1,17 @@
+{
+  "example_output_numerators": [
+    0,
+    5,
+    7,
+    9,
+    11,
+    64
+  ],
+  "permutations": 720,
+  "direct_failures": 0,
+  "function_failures": 0,
+  "variant": "revised",
+  "base_commit": "0490d81af4220f33005914676f362f349933fbc1",
+  "header_sha256": "a8682e46152779b46070aa343528c28abd326e71e35ab08826ee5ccafd740444",
+  "actual_header_verified": true
+}

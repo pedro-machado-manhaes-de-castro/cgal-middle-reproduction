@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "original": {
+    "example": [
+      0,
+      5,
+      9,
+      7,
+      11,
+      64
+    ],
+    "diagnostic": {
+      "example_output_numerators": [
+        0,
+        5,
+        9,
+        7,
+        11,
+        64
+      ],
+      "permutations": 720,
+      "direct_failures": 714,
+      "function_failures": 714
+    }
+  },
+  "corrected": {
+    "example": [
+      0,
+      5,
+      7,
+      9,
+      11,
+      64
+    ],
+    "diagnostic": {
+      "example_output_numerators": [
+        0,
+        5,
+        7,
+        9,
+        11,
+        64
+      ],
+      "permutations": 720,
+      "direct_failures": 0,
+      "function_failures": 0
+    }
+  }
+}

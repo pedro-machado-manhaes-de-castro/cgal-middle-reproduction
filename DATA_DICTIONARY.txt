@@ -1,0 +1,17 @@
+Delaunay measurement fields
+
+recorded_results/samples.jsonl has one JSON object per timed construction. dataset and n identify a distribution-size case; seed identifies the paired input permutation. variant is middle-original, middle-corrected or median. trial is the zero-based technical repetition, and repeats is the planned number of repetitions for that policy process. All three policies use identical inputs within each dataset, n and seed.
+
+sort_seconds, insert_seconds and total_seconds are wall times in seconds. The total is the contiguous interval covering sorting and insertion. The corresponding *_cpu_seconds fields measure process CPU time. The phase times sum to their respective total in every trial. Setup, input copies, path computation, geometry checks and destruction are outside these timed intervals.
+
+insertion_path is the open Euclidean path through the exact vector inserted into the triangulation. input_path describes the shuffled input before spatial_sort and is retained as an instrumentation control. Real-data distances are in metres in the specified planar projection; synthetic distances use their generator coordinates. No closing edge is added.
+
+vertices is the triangulation vertex count, and expected_vertices is the exact number of distinct input points. dimension is the effective affine dimension; faces counts finite faces. valid and validity_checked record the explicit triangulation check. The duplicates family has n coordinate records at only three distinct collinear positions.
+
+input_hash and output_hash are 64-bit multiset checksums. input_order_hash and insertion_order_hash are 64-bit sequence checksums. These identify preservation and pairing checks; cryptographic SHA-256 hashes of files are recorded separately in the package and data manifests. peak_rss_kib is the maximum resident memory of the entire policy process, including setup and checks. It is repeated for each technical trial of that process. exit_code is zero for every recorded production process.
+
+data/*.xy contains little-endian binary float64 pairs x,y, with no header and exactly 16*n bytes. data/datasets.json identifies the full datasets, projection centres, radius, source selections and hashes. Samples are prefixes of a seed-specific shuffle of the full projected dataset, so each seed defines nested real-data samples.
+
+analysis/seed_measurements.csv takes the median of technical repetitions within a seed. timings_and_paths.csv then takes the median over the seven seeds. paired_ratios.csv contains geometric means of seven numerator/denominator ratios, individual percentile-bootstrap 95% intervals, extrema and the number of pairs with a reduction. largest_case_ratios.csv selects the maximum n of each family for corrected/original. Technical repetitions are not treated as independent input samples. Ratios of the reported marginal medians can differ from the paired geometric mean.
+
+Figures 1 and 2 connect the medians in timings_and_paths.csv on logarithmic axes. Figure 3 uses paired_ratios.csv and displays individual intervals. The analysis uses 20000 bootstrap resamples with a deterministic seed per comparison and metric. There is no multiplicity adjustment, and the results describe the recorded distributions, sizes, seeds and machine.

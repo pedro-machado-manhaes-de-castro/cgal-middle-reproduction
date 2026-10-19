@@ -1,0 +1,11 @@
+# Tables 1-3 and Figures 1-3: Delaunay construction times and insertion paths.
+cmake_minimum_required(VERSION 3.22)
+project(Delaunay_policy_comparison LANGUAGES CXX)
+find_package(CGAL REQUIRED)
+foreach(variant IN ITEMS original corrected)
+    add_executable(bench_${variant} bench.cpp)
+    target_compile_features(bench_${variant} PRIVATE cxx_std_17)
+    target_link_libraries(bench_${variant} PRIVATE CGAL::CGAL)
+    target_compile_definitions(bench_${variant} PRIVATE BENCH_VARIANT="${variant}")
+    target_include_directories(bench_${variant} BEFORE PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/headers/${variant})
+endforeach()
