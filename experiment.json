@@ -10,7 +10,10 @@
     "analyze.py": "9d55d0d1f40c8491fa1b24ed75b2b5e40b4bed11297bbcdc552725f1c221afa9",
     "DESIGN.txt": "4d74fe2ad56213052f94711fae71d44b44b8aa86199b209029f293c2ad7d91b6",
     "headers/original/CGAL/Hilbert_sort_middle_2.h": "31dbf1b5a03ce67eb436f86cfd11cb6d2f44b56cece1ec99481318eb72e35a4f",
-    "headers/corrected/CGAL/Hilbert_sort_middle_2.h": "a8682e46152779b46070aa343528c28abd326e71e35ab08826ee5ccafd740444"
+    "headers/corrected/CGAL/Hilbert_sort_middle_2.h": "a8682e46152779b46070aa343528c28abd326e71e35ab08826ee5ccafd740444",
+    "reproduce_dataset.py": "1578fbe5fc685b001c88682efb59464480ae0fc290d000657fd6698d1bd65681",
+    "reproduce_ny.py": "d85ab692c01d27348e91414265ac1250bf424b92c27a6d9bb1b5035c4611fa74",
+    "rebuild_data.py": "1aea692e897c04860e7dd784e8513e47755df95e53622ebe5f437d5b1911cbd9"
   },
   "base_header_sha256": "31dbf1b5a03ce67eb436f86cfd11cb6d2f44b56cece1ec99481318eb72e35a4f",
   "cgal_base": "."

@@ -5,6 +5,7 @@ __pycache__/
 /cgal/
 /results/
 /ny_results/
+/dataset_results/
 /rebuilt_data/
 /rechecked_analysis/
 /run_config.json
