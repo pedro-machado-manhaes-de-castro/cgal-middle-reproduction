@@ -1,4 +1,4 @@
-# Table 1: public planar point datasets used in the Delaunay comparison.
+# Table: public coordinate datasets in README.md.
 from pathlib import Path
 import gzip
 import hashlib
@@ -147,7 +147,7 @@ def shorelines():
         raise RuntimeError("GSHHG source count mismatch")
     return store("shorelines_europe", np.concatenate(selected), [10.0, 52.0], {
         "source": record, "credit": "Paul Wessel and Walter H. F. Smith; GSHHG 2.3.7",
-        "source_description": "https://www.soest.hawaii.edu/pwessel/gshhg/",
+        "source_description": "https://ftp.soest.hawaii.edu/gshhg/",
         "license": "GNU Lesser General Public License version 3 or later",
         "selection": "gshhs_f.b, levels 1-5, longitude [-25,45], latitude [30,72], inclusive",
         "source_level_1_to_5_count": global_count})

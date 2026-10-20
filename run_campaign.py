@@ -1,4 +1,4 @@
-# Tables 2-3 and Figures 1-3: paired Delaunay policy measurements.
+# Table: paired Delaunay measurements in analysis/paired_ratios.csv.
 from pathlib import Path
 import argparse
 import csv
@@ -70,7 +70,10 @@ def hardware_info():
 
 
 def build():
-    frozen = json.loads((ROOT / "experiment.json").read_text())
+    configuration = ROOT / "run_config.json"
+    if not configuration.exists():
+        configuration = ROOT / "experiment.json"
+    frozen = json.loads(configuration.read_text())
     for name, digest in frozen["files"].items():
         if sha256(ROOT / name) != digest:
             raise RuntimeError("Frozen input changed: " + name)

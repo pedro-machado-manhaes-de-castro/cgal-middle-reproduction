@@ -1,4 +1,4 @@
-// Tables 1-3 and Figures 1-3: Delaunay construction times and insertion paths.
+// Table: Delaunay insertion paths and phase times in analysis/paired_ratios.csv.
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Delaunay_triangulation_2.h>
 #include <CGAL/spatial_sort.h>

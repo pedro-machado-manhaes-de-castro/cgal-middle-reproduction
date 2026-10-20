@@ -1,4 +1,4 @@
-# Tables 1-3 and Figures 1-3: reproduce the Delaunay policy comparison.
+# Table: all paired Delaunay comparisons in analysis/paired_ratios.csv.
 from pathlib import Path
 import hashlib
 import json
@@ -9,7 +9,7 @@ import sys
 root = Path(__file__).resolve().parent
 os.chdir(root)
 base = Path(os.environ["CGAL_BASE"]).resolve()
-manifest = json.loads((root / "measurement_experiment.json").read_text())
+manifest = json.loads((root / "experiment.json").read_text())
 original = (root / "headers/original/CGAL/Hilbert_sort_middle_2.h").read_bytes()
 base_header = (base / "Spatial_sorting/include/CGAL/Hilbert_sort_middle_2.h").read_bytes()
 if base_header.replace(b"\r\n", b"\n") != original.replace(b"\r\n", b"\n"):
@@ -22,7 +22,7 @@ if subprocess.run(["git", "-C", str(base), "diff", "--quiet", "HEAD", "--"]).ret
 manifest["base_header_sha256"] = hashlib.sha256(base_header).hexdigest()
 manifest["cgal_base"] = str(base)
 manifest["line_ending_adaptation"] = "The original source was compared byte-for-byte after CRLF-to-LF normalization. Only the expected local checkout hash was adapted."
-(root / "experiment.json").write_text(json.dumps(manifest, indent=2) + "\n")
+(root / "run_config.json").write_text(json.dumps(manifest, indent=2) + "\n")
 subprocess.run([sys.executable, "run_campaign.py", "--phase", "prepare"], check=True)
 expected = json.loads((root / "datasets.json").read_text())["datasets"]
 actual = {x["name"]: x for x in json.loads((root / "data/datasets.json").read_text())["datasets"]}

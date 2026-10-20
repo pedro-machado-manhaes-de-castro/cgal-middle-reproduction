@@ -1,4 +1,4 @@
-# Table 1: ordering failures among all permutations of six distinct points.
+# Table: exhaustive six-point ordering checks in README.md.
 cmake_minimum_required(VERSION 3.22)
 project(Middle_order_witness LANGUAGES CXX)
 find_package(CGAL REQUIRED)

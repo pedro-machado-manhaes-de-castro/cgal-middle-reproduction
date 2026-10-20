@@ -1,4 +1,4 @@
-// Table 1: diagonal Hilbert order for all permutations of six distinct points.
+// Table: exhaustive six-point ordering checks in README.md.
 #include <CGAL/Simple_cartesian.h>
 #include <CGAL/hilbert_sort.h>
 #include <algorithm>

@@ -1,4 +1,4 @@
-# Table 3: original and corrected middle performance on all New York coordinates.
+# Table: focused New York comparison in validation_run/comparison.csv.
 from pathlib import Path
 import argparse
 import csv
@@ -42,10 +42,10 @@ def verify_sources():
     if checked(["git", "-C", base, "rev-parse", "HEAD"]) != BASE_COMMIT:
         raise RuntimeError("Use the exact CGAL commit from README.md")
     subprocess.run(["git", "-C", str(base), "diff", "--exit-code", "HEAD", "--"], check=True)
-    expected = json.loads((ROOT / "measurement_experiment.json").read_text())
+    expected = json.loads((ROOT / "experiment.json").read_text())
     for name, digest in expected["files"].items():
         if campaign.sha256(ROOT / name) != digest:
-            raise RuntimeError("Measured source changed: " + name)
+            raise RuntimeError("Package source changed: " + name)
     source = (base / "Spatial_sorting/include/CGAL/Hilbert_sort_middle_2.h").read_bytes()
     original = (ROOT / "headers/original/CGAL/Hilbert_sort_middle_2.h").read_bytes()
     if source.replace(b"\r\n", b"\n") != original.replace(b"\r\n", b"\n"):
@@ -117,7 +117,7 @@ def check_results(schedule, require_recorded_order):
             if len({lookup[seed, policy][field] for policy in POLICIES}) != 1:
                 raise RuntimeError("Unpaired inputs or triangulations")
     if require_recorded_order and order_matches != 21:
-        raise RuntimeError("Insertion sequences differ from the recorded environment")
+        raise RuntimeError("Insertion-order hashes, geometry or path differ from the recorded environment")
     comparisons = []
     for metric in ("insertion_path", "sort_seconds", "insert_seconds", "total_seconds"):
         values = [lookup[seed, "middle-corrected"][metric] / lookup[seed, "middle-original"][metric]

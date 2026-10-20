@@ -1,4 +1,4 @@
-# Tables 1-3 and Figures 1-3: Delaunay construction times and insertion paths.
+# Table: Delaunay insertion paths and phase times in analysis/paired_ratios.csv.
 cmake_minimum_required(VERSION 3.22)
 project(Delaunay_policy_comparison LANGUAGES CXX)
 find_package(CGAL REQUIRED)
